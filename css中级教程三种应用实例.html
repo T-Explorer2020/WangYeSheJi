@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.text {
+  background-color: #eee;
+  max-width: 500px;
+  height: 90px;
+  border: 3px solid green;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h1>css中级教程三种应用实例</h1>
+
+
+<div class="text">
+<p>如下文本居中</p>
+<p>最大宽度为500px</p>
+<p>控制布局时，可以使用 overflow 属性。</p>
+<p>overflow 属性规定如果内容溢出元素框会发生什么情况。</p>
+<p>overflow-x 规定如何处理内容的左/右边缘。</p>
+<p>overflow-y 规定如何处理内容的上/下边缘。</p>
+</div>
+<p>----------------------------</P>
+<div class="dropdown">
+  <span>可悬停的下拉菜单</span>
+  <div class="dropdown-content">
+  <p>此为下拉菜单应用实例</p>
+  </div>
+</div>
+</body>
+</html>
